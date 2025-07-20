@@ -22,4 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Reference and documentation files
 /reference/
+CLAUDE.md
+DEPLOYMENT.md

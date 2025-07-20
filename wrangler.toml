@@ -1,5 +1,6 @@
 name = "jikorikai-live"
 compatibility_date = "2024-07-01"
+pages_build_output_dir = "dist"
 
 [env.production]
 name = "jikorikai-live"
@@ -8,6 +9,3 @@ name = "jikorikai-live"
 command = "npm run build"
 cwd = ""
 watch_dir = "src"
-
-[[pages_build_output_dir]]
-value = "dist"

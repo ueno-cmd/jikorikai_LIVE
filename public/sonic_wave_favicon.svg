@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- グラデーション定義 -->
+  <defs>
+    <!-- メインロゴのグラデーション -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#45b7d1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#96ceb4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 光の効果用グラデーション -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="70%" style="stop-color:#4ecdc4;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- 背景のグラデーション -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景円 -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" stroke="url(#logoGradient)" stroke-width="2"/>
+  
+  <!-- 光のエフェクト -->
+  <circle cx="50" cy="50" r="45" fill="url(#glowGradient)"/>
+  
+  <!-- メインの音波デザイン -->
+  <!-- 中央の大きな波 -->
+  <path d="M 20 50 Q 35 35, 50 50 Q 65 65, 80 50" 
+        stroke="url(#logoGradient)" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- 上の音波 -->
+  <path d="M 25 40 Q 37.5 30, 50 40 Q 62.5 50, 75 40" 
+        stroke="url(#logoGradient)" 
+        stroke-width="3" 
+        fill="none" 
+        stroke-linecap="round" 
+        opacity="0.8"/>
+  
+  <!-- 下の音波 -->
+  <path d="M 25 60 Q 37.5 70, 50 60 Q 62.5 50, 75 60" 
+        stroke="url(#logoGradient)" 
+        stroke-width="3" 
+        fill="none" 
+        stroke-linecap="round" 
+        opacity="0.8"/>
+  
+  <!-- 細い音波ライン（上） -->
+  <path d="M 30 32 Q 40 25, 50 32 Q 60 39, 70 32" 
+        stroke="#4ecdc4" 
+        stroke-width="2" 
+        fill="none" 
+        stroke-linecap="round" 
+        opacity="0.6"/>
+  
+  <!-- 細い音波ライン（下） -->
+  <path d="M 30 68 Q 40 75, 50 68 Q 60 61, 70 68" 
+        stroke="#ff6b6b" 
+        stroke-width="2" 
+        fill="none" 
+        stroke-linecap="round" 
+        opacity="0.6"/>
+  
+  <!-- 中央のパルス点 -->
+  <circle cx="50" cy="50" r="3" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- 装飾的な光の粒子 -->
+  <circle cx="35" cy="25" r="1" fill="#4ecdc4" opacity="0.7"/>
+  <circle cx="65" cy="75" r="1.5" fill="#ff6b6b" opacity="0.8"/>
+  <circle cx="75" cy="25" r="1" fill="#45b7d1" opacity="0.6"/>
+  
+  <!-- 外側のリング -->
+  <circle cx="50" cy="50" r="42" 
+          stroke="url(#logoGradient)" 
+          stroke-width="1" 
+          fill="none" 
+          opacity="0.4"/>
+</svg>
